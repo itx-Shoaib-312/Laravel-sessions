@@ -65,7 +65,7 @@
         <div class="container">
 
             <h2>Responsive Form</h2>
-            <form action="{{ route('processForm', [19]) }} " method="post">
+            <form action="{{ route('postprocessForm', [19]) }} " method="post">
                 @csrf
                 <div class="form-group">
                     <label for="name">Name:</label>

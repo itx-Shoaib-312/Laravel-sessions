@@ -65,7 +65,7 @@
         <div class="container">
 
             <h2>Responsive Form</h2>
-            <form action="{{ route('processForm', ['male', 19]) }} " method="get">
+            <form action="{{ route('deleteprocessForm', ['male', 19]) }} " method="post">
                 @method('DELETE')
                 @csrf
                 <div class="form-group">

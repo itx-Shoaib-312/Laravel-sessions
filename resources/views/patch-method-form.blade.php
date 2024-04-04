@@ -65,7 +65,7 @@
         <div class="container">
 
             <h2>Responsive Form</h2>
-            <form action="{{ route('processForm') }} " method="post">
+            <form action="{{ route('patchprocessForm') }} " method="post">
                 @method('PATCH')
                 @csrf
                 <div class="form-group">

@@ -39,17 +39,17 @@ Route::get('/delete-method-form', function () {
 
 Route::match(['get'], 'process-form/{name}', function ($name) {
     return "This is from get method  $name";
-})->whereAlpha('shoaib')->name('processForm');
+})->whereAlpha('shoaib')->name('getprocessForm');
 
 Route::match(['post'], 'process-form/{age}', function ($age) {
     return "This is from post method $age";
-})->whereNumber(19)->name('processForm');
+})->whereNumber(19)->name('postprocessForm');
 Route::match(['put'], 'process-form/{gender}', function ($gender) {
     return "This is from put method $gender";
-})->whereIn('gender', ['male', 'female'])->name('processForm');
+})->whereIn('gender', ['male', 'female'])->name('putprocessForm');
 Route::match(['delete'], 'process-form/{gender }{age}', function ($gender, $age) {
     return "This is from delete method $gender, $age";
-})->whereAlphaNumeric('male ', 20)->name('processForm');
+})->whereAlphaNumeric('male ', 20)->name('deleteprocessForm');
 Route::match(['patch'], 'process-form', function () {
     return "This is from patch method ";
-})->name('processForm');
+})->name('patchprocessForm');
